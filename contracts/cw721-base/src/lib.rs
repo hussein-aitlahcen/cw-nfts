@@ -6,6 +6,9 @@ mod query;
 pub mod state;
 pub mod upgrades;
 
+#[global_allocator]
+static ALLOC: dlmalloc::GlobalDlmalloc = dlmalloc::GlobalDlmalloc;
+
 #[cfg(test)]
 mod contract_tests;
 #[cfg(test)]

@@ -23,6 +23,7 @@ backtraces = ["cosmwasm-std/backtraces"]
 library = []
 
 [dependencies]
+dlmalloc        = { workspace = true, features = ["global"] }
 cosmwasm-schema = { workspace = true }
 cosmwasm-std    = { workspace = true }
 cw-ownable      = { workspace = true }
